@@ -24,7 +24,7 @@ app.post("/check", (req, res) => {
         res.sendFile(__dirname + "/public/secret.html");
     }
     else{
-        res.redirect("/");
+        res.send("<h2>Please input correct password</h2>");
     }
 });
 
